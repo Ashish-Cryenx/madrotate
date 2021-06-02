@@ -129,8 +129,7 @@
 				renderer.xr.enabled = true;
 				container.appendChild( renderer.domElement );
 
-				pmremGenerator = new THREE.PMREMGenerator(renderer);
-				pmremGenerator.compileEquirectangularShader();
+				
 
 				controls = new OrbitControls(camera, renderer.domElement);
 				controls.addEventListener('change', render);
